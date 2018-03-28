@@ -57,6 +57,7 @@ while 1:
 	parsed_htmlc = BeautifulSoup(htmlc,"html.parser")
 	if c==0:
 		s = parsed_htmlc.get_text()
+		print s
 	slist=find(s,",")
 	S = str(s[i:(find(s,",")[c])])
 	i=find(s,",")[c]+1

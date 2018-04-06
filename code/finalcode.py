@@ -58,9 +58,9 @@ while 1:
 	if c==0:
 		s = parsed_htmlc.get_text()
 		print s
-	slist=find(s,",")
-	S = str(s[i:(find(s,",")[c])])
-	i=find(s,",")[c]+1
+	slist=find(s,";")
+	S = str(s[i:(find(s,";")[c])])
+	i=find(s,";")[c]+1
 	c=c+1
 	if c==len(slist):
 		c=0

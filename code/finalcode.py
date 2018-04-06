@@ -45,9 +45,9 @@ while 1:
 	if len(ret) > 3:
 		pos=ret.index(",")
 		id=str(ret[0:pos])
-		pos2=ret.rindex(",")
-		cmd = ret[pos+1:pos2]
-		val = ret[pos2+1:len(ret)-2]
+		pos2=ret.rindex(";")
+		val = ret[pos+1:pos2]
+		cmd = ret[pos2+1:len(ret)-2]
 		urlSend=str('http://vps.sensorfaucets.com/stock_db/data_store.php?mac=')+mac_id[1]+str('&id=')+id+str('&value=')+val+str('&cmd=')+cmd
 		urllib2.urlopen(urlSend)
 		print id + cmd + val +"\n"

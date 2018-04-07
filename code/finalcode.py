@@ -1,5 +1,5 @@
 '''
-To make a Raspberry Pi communicate with a set of weighing machines over serial and send/recieve the responses according to the client requirements.
+Final stable code to make a Raspberry Pi communicate with a set of weighing machines over serial and send/recieve the responses according to the client requirements.
 .
 Author: Biprodeep Roy
 .
